@@ -1,0 +1,188 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./src/img/Grass.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: hsl(0, 0%, 90%);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationlist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.navigationlist li {
+    list-style: none;
+}
+
+.navbutton {
+    display: block;
+    text-align: center;
+    width: 4em;
+    height: auto;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 0.3em;
+}
+
+.navbutton:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: serif;
+}
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.soccer-field {
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.soccer-field img {
+    width: auto;
+    max-height: 90%;
+    display: block;
+}
+
+#teams {
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    overflow: scroll;
+    text-align: center;
+}
+
+#teams-header {
+    width: 100%;
+}
+
+.flag-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.img-box {
+    width: 20rem;
+    height: 10rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 550px){
+    .img-box {
+        width: 10rem;
+        height: 5rem;
+    }
+}
+
+.img-box:hover {
+    cursor: pointer;
+    margin-left: 18px;
+    margin-bottom: 18px;
+    box-shadow: -10px 10px hsl(0, 0%, 80%);
+}
+
+.flag-images {
+    width: auto;
+    height: 100%;
+    display: block;
+}
+
+.flag-container p, .flag-container h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#venues {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 25rem;
+    overflow: scroll;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 555px){
+    #venues {
+        flex-wrap: wrap;
+    }
+}
+
+#venues .img-box {
+    flex-shrink: 0;
+    height: 15rem;
+}
+
+.stadium-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.stadium-container h3, .stadium-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.stadium-images {
+    width: auto;
+    height: 100%;
+    display: block;
+}
+
+
